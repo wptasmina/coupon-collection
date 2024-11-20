@@ -1,0 +1,437 @@
+[
+  {
+    "_id": 1,
+    "title": "Winter Jackets",
+    "brand_name": "Sailor",
+    "rating": 4.8,
+    "description": "Stay warm with our premium winter clothes collection",
+    "brand_logo": "https://i.ibb.co.com/k4f1xGN/img-10.png",
+    "image": "https://i.ibb.co.com/gwbbdbj/img-11.jpg",
+    "coupons": [
+      {
+        "coupon-code": "COZY50",
+        "description": "50% off on winter jackets and coats",
+        "expiry-date": "2024-12-31",
+        "condition": "Valid on orders above $100",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon-code": "KNIT20",
+        "description": "20% off on knitted sweaters",
+        "expiry-date": "2025-01-20",
+        "condition": "No minimum order value",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "www.sailor.clothing",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 2,
+    "title": "Women T-Shart",
+    "brand_name": "Aarong",
+    "rating": 4.7,
+    "description": "Stylish and comfortable winter clothes for all",
+    "brand_logo": "https://i.ibb.co.com/hgPnG0w/img-1.jpg",
+    "image": "https://i.ibb.co.com/CmHG0hd/img-22.jpg",
+    "coupons": [
+      {
+        "coupon-code": "WARMWEAR30",
+        "description": "30% off on thermal wear",
+        "expiry-date": "2024-12-25",
+        "condition": "Valid for all customers",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon-code": "FREEDEL",
+        "description": "Free delivery on winter collections",
+        "expiry-date": "2024-12-31",
+        "condition": "Valid on orders above $50",
+        "coupon_type": "shipping"
+      }
+    ],
+    "shop-Link": "www.aarong.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 3,
+    "title": "Women Kuftan",
+    "brand_name": "Anjans",
+    "rating": 4.6,
+    "description": "High-quality winter jackets and sweaters",
+    "brand_logo": "https://i.ibb.co.com/BK0ZpfS/img-2.jpg",
+    "image": "https://i.ibb.co.com/zPNBhPB/img-3.jpg",
+    "coupons": [
+      {
+        "coupon-code": "BLIZZARD15",
+        "description": "15% off on winter coats",
+        "expiry-date": "2025-01-10",
+        "condition": "Applicable for orders above $75",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.anjans.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 4,
+    "title": "A Classy Winter Outfit Formula ",
+    "brand_name": "Kay Kraft",
+    "rating": 4.9,
+    "description": "Affordable winter fashion for everyone",
+    "brand_logo": "https://i.ibb.co.com/CvTpxPy/img-5.jpg",
+    "image": "https://i.ibb.co.com/wdMxYs6/img-2.jpg",
+    "coupons": [
+      {
+        "coupon-code": "FROST20",
+        "description": "20% off on scarves and woolen accessories",
+        "expiry-date": "2024-12-31",
+        "condition": "Valid on all items",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.kaykraft.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 5,
+    "title": "Winter Jackets",
+    "brand_name": "Deshal",
+    "rating": 4.7,
+    "description": "Trendy and functional winterwear at amazing prices",
+    "brand_logo": "https://i.ibb.co.com/gm9FY3x/Deshal-Main.png",
+    "image": "https://i.ibb.co.com/xXS3ndJ/img-2.jpg",
+    "coupons": [
+      {
+        "coupon-code": "ESSENTIALS40",
+        "description": "Flat 40% off on all winter outfits",
+        "expiry-date": "2025-01-15",
+        "condition": "Valid on select collections",
+        "coupon_type": "flat"
+      }
+    ],
+    "shop-Link": "www.deshal.net",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 6,
+    "title": "Winter Jackets",
+    "brand_name": "Yellow",
+    "rating": 4.8,
+    "description": "Keep warm this winter with stylish clothing options",
+    "brand_logo": "https://i.ibb.co.com/c1CKtm4/img-11.png",
+    "image": "https://i.ibb.co.com/dWFq7w7/jk.jpg",
+    "coupons": [
+      {
+        "coupon-code": "CLOSET10",
+        "description": "10% off on all winter clothing",
+        "expiry-date": "2024-12-31",
+        "condition": "Valid for new customers only",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.yellowclothing.net",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 7,
+    "title": "Neck Zipper Sleeve Sweater",
+    "brand_name": "Rang",
+    "rating": 4.6,
+    "description": "Winter clothes that blend fashion and comfort",
+    "brand_logo": "https://i.ibb.co.com/26LWLwy/download-10.jpg",
+    "image": "https://i.ibb.co.com/sP4gR97/img-4.jpg",
+    "coupons": [
+      {
+        "coupon-code": "CHILL30",
+        "description": "30% off on jackets and pullovers",
+        "expiry-date": "2024-12-20",
+        "condition": "Applicable on orders above $50",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.rang-bd.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 8,
+    "title": "Winter Jackets",
+    "brand_name": "Sadakalo",
+    "rating": 4.7,
+    "description": "Winter fashion redefined with premium clothing",
+    "brand_logo": "https://i.ibb.co.com/bb14srs/image.png",
+    "image": "https://i.ibb.co.com/YLvrJm6/img-3.jpg",
+    "coupons": [
+      {
+        "coupon-code": "SNOW50",
+        "description": "Flat 50% off on woolen sweaters",
+        "expiry-date": "2025-01-05",
+        "condition": "Cannot be combined with other offers",
+        "coupon_type": "flat"
+      }
+    ],
+    "shop-Link": "www.sadakalo.net",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 9,
+    "title": "Bomber Jacket",
+    "brand_name": "Nogorpolli",
+    "rating": 4.9,
+    "description": "Durable and warm winter gear for extreme conditions",
+    "brand_logo": "https://i.ibb.co.com/WHQXndt/nogorpolli-logo.jpg",
+    "image": "https://i.ibb.co.com/tmfkC5R/TS.webp",
+    "coupons": [
+      {
+        "coupon-code": "POLAR25",
+        "description": "25% off on heavy-duty winter jackets",
+        "expiry-date": "2025-01-10",
+        "condition": "Valid on all items",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.jatrabangladesh.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 10,
+    "title": "Wool Blazers",
+    "brand_name": "Freeland",
+    "rating": 4.6,
+    "description": "Elegant and stylish winter clothes at great prices",
+    "brand_logo": "https://i.ibb.co.com/QcmZWwq/Freeland.jpg",
+    "image": "https://i.ibb.co.com/TLmGvF9/img-1.jpg",
+    "coupons": [
+      {
+        "coupon-code": "ICE10",
+        "description": "10% off on woolen scarves and caps",
+        "expiry-date": "2024-12-31",
+        "condition": "Valid on first orders",
+        "coupon_type": "percentage"
+      },
+      {
+        "coupon-code": "FREEDEL",
+        "description": "Free shipping on all winterwear",
+        "expiry-date": "2024-12-25",
+        "condition": "Minimum order $40",
+        "coupon_type": "shipping"
+      }
+    ],
+    "shop-Link": "https://freeland.com.bd",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 11,
+    "title": "Winter Zipper Jackets",
+    "brand_name": "Richman",
+    "rating": 4.7,
+    "description": "Budget-friendly fashion for chilly weather",
+    "brand_logo": "https://i.ibb.co.com/LCcS9s9/img-9.jpg",
+    "image": "https://i.ibb.co.com/RgrY89B/img-13.jpg",
+    "coupons": [
+      {
+        "coupon-code": "FROSTED30",
+        "description": "30% off on all winter apparel",
+        "expiry-date": "2025-01-15",
+        "condition": "No minimum order required",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.richmanbd.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 12,
+    "title": "Neck Zipper Jackets",
+    "brand_name": "Klubhaus",
+    "rating": 4.8,
+    "description": "Chic winter clothes for the style-conscious",
+    "brand_logo": "https://i.ibb.co.com/hDXVNGT/img-6.jpg",
+    "image": "https://i.ibb.co.com/4j0rhpy/img-4.jpg",
+    "coupons": [
+      {
+        "coupon-code": "ARCTIC20",
+        "description": "20% off on coats and jackets",
+        "expiry-date": "2025-01-10",
+        "condition": "Applicable on orders above $60",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "https://klubhaus.com.bd",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 13,
+    "title": "Winter Tops",
+    "brand_name": "Dorjibari",
+    "rating": 4.5,
+    "description": "Affordable thermal and fleece winter clothing",
+    "brand_logo": "https://i.ibb.co.com/L8qMhmC/img-4.jpg",
+    "image": "https://i.ibb.co.com/jRVWgHn/img-20.jpg",
+    "coupons": [
+      {
+        "coupon-code": "CHILL15",
+        "description": "15% off on thermal sets",
+        "expiry-date": "2025-01-20",
+        "condition": "Valid for repeat customers",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop-Link": "www.dorjibari.com.bd",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 14,
+    "title": "Winter Nack T-Shart",
+    "brand_name": "Easy Fashion",
+    "rating": 4.8,
+    "description": "Top-quality snow gear and winter outfits",
+    "brand_logo": "https://i.ibb.co.com/mHym5sG/img-3.png",
+    "image": "https://i.ibb.co.com/6BfjDwy/img-5.jpg",
+    "coupons": [
+      {
+        "coupon-code": "SNOWY40",
+        "description": "Flat 40% off on all items",
+        "expiry-date": "2025-01-05",
+        "condition": "No minimum purchase required",
+        "coupon_type": "flat"
+      }
+    ],
+    "shop-Link": "https://easyfashion.com.bd",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 15,
+    "title": "Winter Kuftan",
+    "brand_name": "Nabila",
+    "rating": 4.8,
+    "description": "Stylish winter outfits with a modern twist",
+    "brand_logo": "https://i.ibb.co.com/gWVcnyx/nabila.png",
+    "image": "https://i.ibb.co.com/5TygmSF/img-1.jpg",
+    "coupons": [
+      {
+        "coupon-code": "COLD30",
+        "description": "30% off on all outerwear",
+        "expiry-date": "2025-01-25",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "http://www.nabila.com.bd/",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 16,
+    "title": "Winter Crew Sweater",
+    "brand_name": "Lerevecraze",
+    "rating": 4.7,
+    "description": "All-in-one winter solutions for every need",
+    "brand_logo": "https://i.ibb.co.com/V3WK5S3/images-79.jpg",
+    "image": "https://i.ibb.co.com/BjCCjNk/img-1.jpg",
+    "coupons": [
+      {
+        "coupon-code": "COZY20",
+        "description": "20% off on winter boots and jackets",
+        "expiry-date": "2025-01-18",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "www.lerevecraze.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 17,
+    "title": "Winter Crew Neck Sweater",
+    "brand_name": "Ecstasy",
+    "rating": 4.6,
+    "description": "Quality winter essentials for your wardrobe",
+    "brand_logo": "https://i.ibb.co.com/71j728D/img-4.jpg",
+    "image": "https://i.ibb.co.com/RzBZ5vw/img-4.jpg",
+    "coupons": [
+      {
+        "coupon-code": "WINTER15",
+        "description": "15% off on all winter gear",
+        "expiry-date": "2025-02-01",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "www.ecstasybd.com",
+    "category": "Clothing",
+    "isSaleOn": false
+  },
+  {
+    "_id": 18,
+    "title": "Easy Crew Neck Sweater",
+    "brand_name": "Smartex",
+    "rating": 4.7,
+    "description": "Smart and functional clothing for colder months",
+    "brand_logo": "https://i.ibb.co.com/p1LsSDJ/Smartex.png",
+    "image": "https://i.ibb.co.com/JzrqzHx/images-58.jpg",
+    "coupons": [
+      {
+        "coupon-code": "FREEZEMAX25",
+        "description": "25% off on all sweaters",
+        "expiry-date": "2025-01-30",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "www.smartex-bd.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": 19,
+    "title": "Winter New Sweater Collection",
+    "brand_name": "Infinity",
+    "rating": 4.6,
+    "description": "All types of winter clothing and accessories",
+    "brand_logo": "https://i.ibb.co.com/nDhkK5M/store-5257730ee49b7c6d257c8504dcb60bb4.png",
+    "image": "https://i.ibb.co.com/vXWkFg1/img-1.jpg",
+    "coupons": [
+      {
+        "coupon-code": "WARMUP20",
+        "description": "20% off on coats and jackets",
+        "expiry-date": "2025-02-05",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "https://infinitymegamall.com",
+    "category": "Clothing",
+    "isSaleOn": false
+  },
+  {
+    "_id": 20,
+    "title": "Winter Jackets Collection",
+    "brand_name": "CoolBreeze",
+    "rating": 4.5,
+    "description": "Winter wear designed to keep you cozy and chic",
+    "brand_logo": "https://i.ibb.co.com/pn1fYFp/jfNaUN.jpg",
+    "image": "https://i.ibb.co.com/cFbMNpz/img-5.jpg",
+    "coupons": [
+      {
+        "coupon-code": "CHILL25",
+        "description": "25% off on all winter clothing",
+        "expiry-date": "2025-01-25",
+        "coupon_type": "percentage"
+      }
+    ],
+    "shop_Link": "www.coolbreeze.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  }
+]
