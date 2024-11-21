@@ -7,7 +7,7 @@ const TopBrands = () => {
   return (
     <>
       <h2 className="text-2xl font-bold text-center my-4">
-        Top Brands on Sale
+        Top Brands
       </h2>
       <div className="bg-blue-100">
         <div className="w-full max-w-6xl mx-auto my-8">

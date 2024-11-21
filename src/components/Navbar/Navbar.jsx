@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../Navbar/Navbar.css'
 import logo from '../../assets/logo.png'
-// import { FaRegCircleUser } from 'react-icons/fa6';
 
 export default function Navbar() {
   const link = (
@@ -48,13 +47,16 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="navbar-end">
-          {/* <FaRegCircleUser className="text-blue-200 text-3xl" /> */}
+         <NavLink to="/login">
           <button className="px-4 md:py-2 py-1 bg-[#218ec4] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
             Logo
           </button>
-          <button className="ml-4 px-4 md:py-2 py-1 bg-[#218ec4] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
-           Registration
-          </button>
+          </NavLink>
+          <NavLink to="/register">
+            <button className="ml-4 px-4 md:py-2 py-1 bg-[#218ec4] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
+              Register
+            </button>
+          </NavLink>
         </div>
       </div>
     </header>

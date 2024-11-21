@@ -44,7 +44,7 @@ export default function Footer() {
           <a className="link link-hover text-black">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="footer footer-center bg-base-100 text-base-content p-4">
+      <footer className="footer footer-center bg-blue-950 text-white p-4">
         <aside>
           <p>
             Copyright © {new Date().getFullYear()} - All right reserved by ACME

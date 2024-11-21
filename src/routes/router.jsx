@@ -9,6 +9,9 @@ import CouponPage from "../pages/CouponPage";
 import BrandsOnSale from "../components/BrandsOnSall/BrandsOnSall";
 import TopBrands from "../components/TopBrands/TopBrands";
 import BrandDetails from "../components/BrandDetails/BrandDetails";
+import Register from "../components/Registration/Register";
+import Login from "../components/Login/Login";
+import ForgotPassword from "../components/ForgotPassword/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,19 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />,
         loader: () => fetch("/brands.json"),
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+        loader: () => fetch("/brands.json").then((res) => res.json()),
+      },
+      {
+        path: "/forget-password",
+        element: <ForgotPassword />,
       },
       {
         path: "/",
@@ -44,7 +60,8 @@ const router = createBrowserRouter([
             const brands = await res.json();
             const brand = brands.find((b) => b._id.toString() === params.id);
 
-            if (!brand) throw new Error(`Brand with ID ${params.id} not found.`);
+            if (!brand)
+              throw new Error(`Brand with ID ${params.id} not found.`);
             return brand;
           } catch (error) {
             console.error("Error loading brand details:", error.message);

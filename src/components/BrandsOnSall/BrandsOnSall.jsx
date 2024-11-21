@@ -1,19 +1,18 @@
 import { useLoaderData } from "react-router-dom";
 
 const BrandsOnSall = () => {
-  // Fetch the data passed from the loader
+
   const brandsOnSale = useLoaderData();
 
   return (
     <div className="w-full max-w-6xl mx-auto my-8">
-      <h2 className="text-2xl font-bold text-center mb-4">Brands on Sale</h2>
+      <h2 className="text-2xl font-bold text-center mb-4">Brands on Sall</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {brandsOnSale.map((brand) => (
           <div
             key={brand._id}
             className="border rounded-lg shadow-md p-4 flex flex-col items-center"
           >
-            {/* <img src={brand.image} /> */}
             <img
               src={brand.brand_logo}
               alt={`${brand.brand_name} logo`}
