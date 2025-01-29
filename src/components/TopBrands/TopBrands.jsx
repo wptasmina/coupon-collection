@@ -6,11 +6,11 @@ const TopBrands = () => {
 
   return (
     <>
-      <h2 className="text-2xl font-bold text-center my-4">
+      <h2 className="text-4xl text-blue-950 font-bold text-center my-10">
         Top Brands
       </h2>
       <div className="bg-blue-100">
-        <div className="w-full max-w-6xl mx-auto my-8">
+        <div className="w-10/12 mx-auto my-8">
           <Marquee pauseOnHover speed={50} gradient={false} className="py-4">
             {brands.map((brand) => (
               <div

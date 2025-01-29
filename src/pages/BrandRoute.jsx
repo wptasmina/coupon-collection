@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+
 import { FaStar } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -85,7 +86,7 @@ const BrandRoute = () => {
             <div className="flex justify-between md:flex-col-reverse items-center mt-auto">
               <button
                 onClick={() => handleViewCoupons(brand._id, brand.isSaleOn)}
-                className="bg-blue-500 text-white py-2 px-4 rounded-lg"
+                className="bg-blue-950 text-white py-2 px-4 rounded-lg"
               >
                 View Coupons
               </button>

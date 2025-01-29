@@ -19,33 +19,35 @@ const FeatureCard = ({ feature }) => {
   const handleBuyNow = () => {
     toast.warn("Function didn't implement yet!");
   };
+
   return (
     <div className="card bg-base-100 shadow-sm border border-gray-200 flex flex-col">
-      <figure className="px-4 pt-4">
+      <figure className="sm:px-6 px-4 pt-6">
         <img
           src={image}
           alt={name}
-          className="rounded-xl h-48 w-full object-cover"
+          className="rounded-t-2xl h-72 w-full object-cover"
         />
       </figure>
-      <div className="card-body flex flex-col justify-between flex-grow">
-        <h2 className="card-title text-lg font-bold text-gray-800">
+      <div className=" sm:px-6 px-4 pt-4 pb-6 flex flex-col justify-between flex-grow">
+        <h2 className="card-title text-2xl font-bold text-gray-800">
           {name}
           {isNewArrival && (
-            <div className="badge badge-secondary text-xs md:text-md flex ml-2">
+            <div className="badge badge-secondary bg-green-600 border border-green-600 text-xs md:text-md flex ml-1">
               New
             </div>
           )}
         </h2>
-        <p className="text-sm text-gray-600">{description}</p>
+        <p className="text-sm text-gray-600 pt-2">{description}</p>
         <div className="my-3">
-          <span className="text-lg font-semibold text-gray-900">${price}</span>
+          <span className="text-lg font-semibold text-gray-900">Price: ${price}</span>
           {discount > 0 && (
-            <span className="text-sm text-green-600 ml-2">{discount}% off</span>
+            <span className="text-sm text-white ml-2 bg-red-500 px-2 rounded-full">{discount}% off</span>
           )}
         </div>
         <div className="text-sm text-gray-500 mb-3">
-          <span>Category: {category}</span> | <span>Stock: {stock}</span>
+          <span className="text-black font-medium">Category: {category}.</span>
+          <p className="text-black font-medium">Stock: {stock}</p>
         </div>
         <ul className="list-disc pl-5 text-sm text-gray-700">
           {features.map((feature, index) => (

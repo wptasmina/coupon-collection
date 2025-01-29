@@ -13,8 +13,8 @@ const Review = () => {
   }, []);
 
   return (
-    <div className="w-10/12 mx-auto bg-white my-8">
-      <h2 className="text-4xl text-blue-950 font-extrabold text-center mb-4">
+    <div className="sm:w-10/12 mx-auto sm:px-0 px-4 bg-white my-8">
+      <h2 className="sm:text-4xl text-3xl mt-10 text-blue-950 font-extrabold text-center mb-4">
         Customer Reviews
       </h2>
       <p className="text-lg text-gray-600 w-full md:w-2/3 text-center pb-10  mx-auto">
@@ -25,7 +25,7 @@ const Review = () => {
       {error ? (
         <p className="text-red-500">{error}</p>
       ) : reviews.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 shadow">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
           {reviews.map((review) => (
             <div
               key={review.id}

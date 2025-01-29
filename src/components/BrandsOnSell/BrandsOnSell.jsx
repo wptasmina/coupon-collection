@@ -13,7 +13,7 @@ const BrandsOnSell = () => {
   console.log(sellAvailable);
 
   return (
-    <div>
+    <div className="w-10/12 mx-auto">
       <h2 className="text-4xl font-extrabold text-center text-[#d35523] mb-6">
         Brands on Sale
       </h2>

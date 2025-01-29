@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const BrandsData = ({ brand }) => {
@@ -12,31 +13,38 @@ const BrandsData = ({ brand }) => {
     category,
     isSaleOn,
   } = brand;
+
+  // Function to handle visiting the store
   const handleVisitStore = () => {
-    toast.warn("Function didn't implement yet!");
+    if (shop_Link) {
+      window.open(shop_Link, "_blank"); // Open the shop link in a new tab
+    } else {
+      toast.warn("Shop link not available!"); // Show a warning if the link is missing
+    }
   };
+
   return (
-    <div className="card bg-base-100 shadow-xl p-3 my-4">
+    <div className="card bg-white border shadow-md">
       <img
         src={brand_logo}
         alt={`${brand_name} Logo`}
-        className="w-full h-40 object-cover"
+        className="w-full lg:h-[320px] md:h-[250px] h-[200px] object-cover border-b md:px-6 md:pt-6 px-4 pt-4"
       />
       <div className="card-body">
-        <h2 className="card-title">{brand_name}</h2>
+        <h2 className="card-title text-2xl font-bold">{brand_name}</h2>
         <p className="text-sm text-gray-600">{description}</p>
         <div className="flex items-center">
-          <span className="mr-2">Rating: {rating}</span>
+          <span className="mr-2 font-bold">Rating: {rating}</span>
           <span
             className={`badge ${isSaleOn ? "badge-success" : "badge-error"}`}
           >
             {isSaleOn ? "Sale On" : "No Sale"}
           </span>
         </div>
-        <div className="mt-2">
+        <div>
           <span className="text-sm font-medium">Category: {category}</span>
         </div>
-        <div className="mt-4">
+        <div className="mt-1">
           <h3 className="text-lg font-bold">Coupons:</h3>
           <ul className="list-none">
             {coupons.map((coupon, index) => (
@@ -54,10 +62,14 @@ const BrandsData = ({ brand }) => {
             ))}
           </ul>
         </div>
-        <div className="card-actions justify-end mt-4">
-          <a href="#" onClick={handleVisitStore} className="btn btn-primary">
+        <div className="card-actions justify-end mt-2">
+          <Link
+            to="#"
+            onClick={handleVisitStore}
+            className="btn bg-[#d35523] hover:bg-blue-900 text-white"
+          >
             Visit Store
-          </a>
+          </Link>
         </div>
       </div>
     </div>
