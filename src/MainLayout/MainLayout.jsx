@@ -9,10 +9,6 @@ export default function MainLayout() {
   return (
     <>
       <div>
-        <button onClick={notify}>Make me a toast</button>
-        <Toaster />
-      </div>
-      <div>
         <Header />
         <Outlet />
         <Footer />

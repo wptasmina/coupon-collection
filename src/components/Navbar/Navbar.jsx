@@ -12,7 +12,7 @@ export default function Navbar() {
     </>
   );
   return (
-    <header className="bg-blue-950">
+    <header className="bg-blue-950 sticky z-50 top-0">
       <div className="navbar px-0 w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -48,12 +48,12 @@ export default function Navbar() {
         </div>
         <div className="navbar-end">
          <NavLink to="/login">
-          <button className="px-4 md:py-2 py-1 bg-[#218ec4] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
+          <button className="px-4 md:py-2 py-1 bg-[#A64621] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
             Logo
           </button>
           </NavLink>
           <NavLink to="/register">
-            <button className="ml-4 px-4 md:py-2 py-1 bg-[#218ec4] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
+            <button className="ml-4 px-4 md:py-2 py-1 bg-[#A64621] text-white md:text-xl text-md cursor-pointer font-medium rounded-md ">
               Register
             </button>
           </NavLink>

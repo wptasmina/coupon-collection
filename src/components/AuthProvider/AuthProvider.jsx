@@ -1,15 +1,15 @@
 
-import { createContext } from "react";
-// import { AuthContext } from './AuthProvider';
+// import { createContext } from "react";
+// // import { AuthContext } from './AuthProvider';
 
-export const AuthContext = createContext();
+// export const AuthContext = createContext();
 
-const AuthProvider = ({ routes }) => {
+// const AuthProvider = ({ routes }) => {
 
-const value = { key: "value" };
-  return <AuthContext.Provider value={value}>{routes}</AuthContext.Provider>;
-};
+// const value = { key: "value" };
+//   return <AuthContext.Provider value={value}>{routes}</AuthContext.Provider>;
+// };
 
-export default AuthProvider;
+// export default AuthProvider;
 
 

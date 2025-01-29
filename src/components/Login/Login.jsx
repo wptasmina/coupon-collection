@@ -1,87 +1,111 @@
-
-import { useState } from "react";
+import React, { useContext, useRef, useState } from "react";
+import { AuthContext } from "../../context/AuthContext";
+import { FaGoogle, FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 
+
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const { signInWithGoogle, logInWithEmail } = useContext(AuthContext);
+  const emailRef = useRef();
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogin = async (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-
-    // Example: Simulating login logic
-    if (email === "test@example.com" && password === "password123") {
-      console.log("User logged in successfully!");
-      navigate("/home"); // Navigate to the desired route
-    } else {
-      setError("Invalid email or password");
-    }
+    const form = new FormData(e.target);
+    const email = form.get("email");
+    const password = form.get("password");
+    logInWithEmail(email, password)
+      .then((result) => {
+        const user = result.user;
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+      });
   };
 
-  const handleGoogleLogin = () => {
-    // Simulate Google authentication
-    console.log("User authenticated with Google");
-    navigate("/home"); // Navigate to the desired route
+  const handleForgetRoute = () => {
+    const email = emailRef.current?.value || "";
+    navigate("/forgetPassword", { state: { email } });
+  };
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+  const handleGooglePopUp = () => {
+    navigate("/");
+    signInWithGoogle();
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
-        {error && (
-          <div className="bg-red-100 text-red-700 p-2 rounded mb-4">
-            {error}
-          </div>
-        )}
-        <form onSubmit={handleLogin}>
-          <div className="mb-4">
-            <label className="block mb-2 font-medium">Email</label>
+    <div className="flex justify-center items-center my-10 mx-5">
+      <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 px-2 shrink-0 shadow-2xl">
+        <h2 className="text-2xl my-10 font-bold text-center mb-6 text-[#00BBA6]">
+          Login Now!
+        </h2>
+        <form onSubmit={handleLogin} className="card-body">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
             <input
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full p-2 border rounded"
-              placeholder="Enter your email"
+              placeholder="email"
+              className="input input-bordered"
               required
+              name="email"
+              ref={emailRef}
             />
           </div>
-          <div className="mb-4">
-            <label className="block mb-2 font-medium">Password</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded"
-              placeholder="Enter your password"
-              required
-            />
+
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Password</span>
+            </label>
+            <div className="relative">
+              <input
+                type={showPassword ? "text" : "password"}
+                placeholder="password"
+                className="input w-full input-bordered pr-10"
+                required
+                name="password"
+              />
+              <span
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </span>
+            </div>
+            <label className="label">
+              <a
+                onClick={handleForgetRoute}
+                href="#"
+                className="label-text-alt link link-hover"
+              >
+                Forgot password?
+              </a>
+            </label>
           </div>
-          <div className="mb-4">
-            <Link to="/forget-password" className="text-blue-500 text-sm">
-              Forgot Password?
-            </Link>
+          <div className="form-control mt-6">
+            <button className="btn btn-accent">Login</button>
           </div>
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
-          >
-            Login
+          <button onClick={handleGooglePopUp} className="btn flex items-center">
+            <span>
+              <FaGoogle />
+            </span>
+            Login With Google
           </button>
         </form>
-        <div className="text-center my-4">
-          <span className="text-gray-600">Don't have an account? </span>
-          <Link to="/register" className="text-blue-500">
-            Register
-          </Link>
+        <div className="flex justify-center items-center">
+          <p className="my-5 font-bold">
+            Don't have an account?{" "}
+            <Link className="text-red-500" to="/register">
+              Register
+            </Link>
+          </p>
         </div>
-        <button
-          onClick={handleGoogleLogin}
-          className="w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 mt-4"
-        >
-          Login with Google
-        </button>
       </div>
     </div>
   );
