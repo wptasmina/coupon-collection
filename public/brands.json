@@ -9,16 +9,16 @@
     "image": "https://i.ibb.co.com/gwbbdbj/img-11.jpg",
     "coupons": [
       {
-        "coupon-code": "COZY50",
+        "coupon_code": "COZY50",
         "description": "50% off on winter jackets and coats",
-        "expiry-date": "2024-12-31",
+        "expiry_date": "2024-12-31",
         "condition": "Valid on orders above $100",
         "coupon_type": "percentage"
       },
       {
-        "coupon-code": "KNIT20",
+        "coupon_code": "KNIT20",
         "description": "20% off on knitted sweaters",
-        "expiry-date": "2025-01-20",
+        "expiry_date": "2025-01-20",
         "condition": "No minimum order value",
         "coupon_type": "percentage"
       }
@@ -37,16 +37,16 @@
     "image": "https://i.ibb.co.com/CmHG0hd/img-22.jpg",
     "coupons": [
       {
-        "coupon-code": "WARMWEAR30",
+        "coupon_code": "WARMWEAR30",
         "description": "30% off on thermal wear",
-        "expiry-date": "2024-12-25",
+        "expiry_date": "2024-12-25",
         "condition": "Valid for all customers",
         "coupon_type": "percentage"
       },
       {
-        "coupon-code": "FREEDEL",
+        "coupon_code": "FREEDEL",
         "description": "Free delivery on winter collections",
-        "expiry-date": "2024-12-31",
+        "expiry_date": "2024-12-31",
         "condition": "Valid on orders above $50",
         "coupon_type": "shipping"
       }
@@ -65,9 +65,9 @@
     "image": "https://i.ibb.co.com/zPNBhPB/img-3.jpg",
     "coupons": [
       {
-        "coupon-code": "BLIZZARD15",
+        "coupon_code": "BLIZZARD15",
         "description": "15% off on winter coats",
-        "expiry-date": "2025-01-10",
+        "expiry_date": "2025-01-10",
         "condition": "Applicable for orders above $75",
         "coupon_type": "percentage"
       }
@@ -86,9 +86,9 @@
     "image": "https://i.ibb.co.com/wdMxYs6/img-2.jpg",
     "coupons": [
       {
-        "coupon-code": "FROST20",
+        "coupon_code": "FROST20",
         "description": "20% off on scarves and woolen accessories",
-        "expiry-date": "2024-12-31",
+        "expiry_date": "2024-12-31",
         "condition": "Valid on all items",
         "coupon_type": "percentage"
       }
@@ -107,9 +107,9 @@
     "image": "https://i.ibb.co.com/xXS3ndJ/img-2.jpg",
     "coupons": [
       {
-        "coupon-code": "ESSENTIALS40",
+        "coupon_code": "ESSENTIALS40",
         "description": "Flat 40% off on all winter outfits",
-        "expiry-date": "2025-01-15",
+        "expiry_date": "2025-01-15",
         "condition": "Valid on select collections",
         "coupon_type": "flat"
       }
@@ -128,9 +128,9 @@
     "image": "https://i.ibb.co.com/dWFq7w7/jk.jpg",
     "coupons": [
       {
-        "coupon-code": "CLOSET10",
+        "coupon_code": "CLOSET10",
         "description": "10% off on all winter clothing",
-        "expiry-date": "2024-12-31",
+        "expiry_date": "2024-12-31",
         "condition": "Valid for new customers only",
         "coupon_type": "percentage"
       }
@@ -149,9 +149,9 @@
     "image": "https://i.ibb.co.com/sP4gR97/img-4.jpg",
     "coupons": [
       {
-        "coupon-code": "CHILL30",
+        "coupon_code": "CHILL30",
         "description": "30% off on jackets and pullovers",
-        "expiry-date": "2024-12-20",
+        "expiry_date": "2024-12-20",
         "condition": "Applicable on orders above $50",
         "coupon_type": "percentage"
       }
@@ -170,9 +170,9 @@
     "image": "https://i.ibb.co.com/YLvrJm6/img-3.jpg",
     "coupons": [
       {
-        "coupon-code": "SNOW50",
+        "coupon_code": "SNOW50",
         "description": "Flat 50% off on woolen sweaters",
-        "expiry-date": "2025-01-05",
+        "expiry_date": "2025-01-05",
         "condition": "Cannot be combined with other offers",
         "coupon_type": "flat"
       }
@@ -191,9 +191,9 @@
     "image": "https://i.ibb.co.com/tmfkC5R/TS.webp",
     "coupons": [
       {
-        "coupon-code": "POLAR25",
+        "coupon_code": "POLAR25",
         "description": "25% off on heavy-duty winter jackets",
-        "expiry-date": "2025-01-10",
+        "expiry_date": "2025-01-10",
         "condition": "Valid on all items",
         "coupon_type": "percentage"
       }
@@ -212,16 +212,16 @@
     "image": "https://i.ibb.co.com/TLmGvF9/img-1.jpg",
     "coupons": [
       {
-        "coupon-code": "ICE10",
+        "coupon_code": "ICE10",
         "description": "10% off on woolen scarves and caps",
-        "expiry-date": "2024-12-31",
+        "expiry_date": "2024-12-31",
         "condition": "Valid on first orders",
         "coupon_type": "percentage"
       },
       {
-        "coupon-code": "FREEDEL",
+        "coupon_code": "FREEDEL",
         "description": "Free shipping on all winterwear",
-        "expiry-date": "2024-12-25",
+        "expiry_date": "2024-12-25",
         "condition": "Minimum order $40",
         "coupon_type": "shipping"
       }
@@ -240,9 +240,9 @@
     "image": "https://i.ibb.co.com/RgrY89B/img-13.jpg",
     "coupons": [
       {
-        "coupon-code": "FROSTED30",
+        "coupon_code": "FROSTED30",
         "description": "30% off on all winter apparel",
-        "expiry-date": "2025-01-15",
+        "expiry_date": "2025-01-15",
         "condition": "No minimum order required",
         "coupon_type": "percentage"
       }
@@ -261,9 +261,9 @@
     "image": "https://i.ibb.co.com/4j0rhpy/img-4.jpg",
     "coupons": [
       {
-        "coupon-code": "ARCTIC20",
+        "coupon_code": "ARCTIC20",
         "description": "20% off on coats and jackets",
-        "expiry-date": "2025-01-10",
+        "expiry_date": "2025-01-10",
         "condition": "Applicable on orders above $60",
         "coupon_type": "percentage"
       }
@@ -282,9 +282,9 @@
     "image": "https://i.ibb.co.com/jRVWgHn/img-20.jpg",
     "coupons": [
       {
-        "coupon-code": "CHILL15",
+        "coupon_code": "CHILL15",
         "description": "15% off on thermal sets",
-        "expiry-date": "2025-01-20",
+        "expiry_date": "2025-01-20",
         "condition": "Valid for repeat customers",
         "coupon_type": "percentage"
       }
@@ -303,9 +303,9 @@
     "image": "https://i.ibb.co.com/6BfjDwy/img-5.jpg",
     "coupons": [
       {
-        "coupon-code": "SNOWY40",
+        "coupon_code": "SNOWY40",
         "description": "Flat 40% off on all items",
-        "expiry-date": "2025-01-05",
+        "expiry_date": "2025-01-05",
         "condition": "No minimum purchase required",
         "coupon_type": "flat"
       }
@@ -324,9 +324,9 @@
     "image": "https://i.ibb.co.com/5TygmSF/img-1.jpg",
     "coupons": [
       {
-        "coupon-code": "COLD30",
+        "coupon_code": "COLD30",
         "description": "30% off on all outerwear",
-        "expiry-date": "2025-01-25",
+        "expiry_date": "2025-01-25",
         "coupon_type": "percentage"
       }
     ],
@@ -344,9 +344,9 @@
     "image": "https://i.ibb.co.com/BjCCjNk/img-1.jpg",
     "coupons": [
       {
-        "coupon-code": "COZY20",
+        "coupon_code": "COZY20",
         "description": "20% off on winter boots and jackets",
-        "expiry-date": "2025-01-18",
+        "expiry_date": "2025-01-18",
         "coupon_type": "percentage"
       }
     ],
@@ -364,9 +364,9 @@
     "image": "https://i.ibb.co.com/RzBZ5vw/img-4.jpg",
     "coupons": [
       {
-        "coupon-code": "WINTER15",
+        "coupon_code": "WINTER15",
         "description": "15% off on all winter gear",
-        "expiry-date": "2025-02-01",
+        "expiry_date": "2025-02-01",
         "coupon_type": "percentage"
       }
     ],
@@ -384,9 +384,9 @@
     "image": "https://i.ibb.co.com/JzrqzHx/images-58.jpg",
     "coupons": [
       {
-        "coupon-code": "FREEZEMAX25",
+        "coupon_code": "FREEZEMAX25",
         "description": "25% off on all sweaters",
-        "expiry-date": "2025-01-30",
+        "expiry_date": "2025-01-30",
         "coupon_type": "percentage"
       }
     ],
@@ -404,9 +404,9 @@
     "image": "https://i.ibb.co.com/vXWkFg1/img-1.jpg",
     "coupons": [
       {
-        "coupon-code": "WARMUP20",
+        "coupon_code": "WARMUP20",
         "description": "20% off on coats and jackets",
-        "expiry-date": "2025-02-05",
+        "expiry_date": "2025-02-05",
         "coupon_type": "percentage"
       }
     ],
@@ -424,9 +424,9 @@
     "image": "https://i.ibb.co.com/cFbMNpz/img-5.jpg",
     "coupons": [
       {
-        "coupon-code": "CHILL25",
+        "coupon_code": "CHILL25",
         "description": "25% off on all winter clothing",
-        "expiry-date": "2025-01-25",
+        "expiry_date": "2025-01-25",
         "coupon_type": "percentage"
       }
     ],

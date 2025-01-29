@@ -1,8 +1,9 @@
 import React, { createContext } from "react";
 const ReviewContext = createContext();
+
 const ReviewProvider = ({ children }) => {
   const reviewInfo = {
-    name: "tareq",
+    name: "Tasmina",
   };
   return (
     <ReviewContext.Provider value={reviewInfo}>

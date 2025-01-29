@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner/Banner";
-import BrandsOnSall from "../components/BrandsOnSall/BrandsOnSall";
+import BrandsOnSell from "../components/BrandsOnSell/BrandsOnSell";
 import TopBrands from "../components/TopBrands/TopBrands";
 import Feature from "./Feature";
 import Review from "./Review";
@@ -11,7 +11,7 @@ export default function HomePage() {
     <>
       <Banner />
       <TopBrands />
-      <BrandsOnSall />
+      <BrandsOnSell />
       <Feature />
       <Review />
 
