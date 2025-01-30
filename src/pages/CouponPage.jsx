@@ -16,7 +16,7 @@ const CouponPage = () => {
       navigate("/login");
       return;
     }
-    fetch("/Brands.json")
+    fetch("/brands.json")
       .then((response) => response.json())
       .then((data) => setBrands(data))
       .catch((error) => console.error("Error fetching brands:", error));
@@ -28,7 +28,7 @@ const CouponPage = () => {
 
   return (
     <div className="container w-11/12 mx-auto p-4">
-      <h1 className="text-3xl font-bold text-center text-blue-500 mb-6">
+      <h1 className="text-4xl font-bold text-center text-blue-950 my-6">
         Brand Coupons
       </h1>
       {brands.map((brand) => (
@@ -44,7 +44,7 @@ const CouponPage = () => {
               <p className="text-gray-600">Rating: {brand.rating} ⭐</p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {brand.coupons.map((coupon) => (
               <div
                 key={coupon.coupon_code}
@@ -61,12 +61,12 @@ const CouponPage = () => {
                     text={coupon.coupon_code}
                     onCopy={handleCopy}
                   >
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    <button className="px-4 py-2 bg-blue-950 text-white rounded hover:bg-blue-600">
                       Copy Code
                     </button>
                   </CopyToClipboard>
                   <button
-                    className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+                    className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-600"
                     onClick={() => window.open(brand.shop_Link, "_blank")}
                   >
                     Use Now

@@ -23,7 +23,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop_Link": "www.sailor.clothing",
+    "shop_Link": "https://www.sailor.clothing",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -51,8 +51,8 @@
         "coupon_type": "shipping"
       }
     ],
-    "shop-Link": "www.aarong.com",
-    "category": "Clothing",
+    "shop_Link": "https://www.aarong.com",
+    "category": "Fashion",
     "isSaleOn": true
   },
   {
@@ -72,7 +72,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.anjans.com",
+    "shop_Link": "https://www.anjans.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -93,7 +93,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.kaykraft.com",
+    "shop_Link": "www.kaykraft.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -114,7 +114,7 @@
         "coupon_type": "flat"
       }
     ],
-    "shop-Link": "www.deshal.net",
+    "shop_Link": "https://www.deshal.net",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -135,7 +135,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.yellowclothing.net",
+    "shop_Link": "https://www.yellowclothing.net",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -156,7 +156,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.rang-bd.com",
+    "shop_Link": "https://rang-bd.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -177,8 +177,8 @@
         "coupon_type": "flat"
       }
     ],
-    "shop-Link": "www.sadakalo.net",
-    "category": "Clothing",
+    "shop_Link": "https://sadakalo.net",
+    "category": "Fashion",
     "isSaleOn": true
   },
   {
@@ -198,7 +198,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.jatrabangladesh.com",
+    "shop_Link": "https://www.jatrabangladesh.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -226,7 +226,7 @@
         "coupon_type": "shipping"
       }
     ],
-    "shop-Link": "https://freeland.com.bd",
+    "shop_Link": "https://www.freeland.com.bd",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -247,7 +247,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.richmanbd.com",
+    "shop_Link": "https://richmanbd.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -268,8 +268,8 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "https://klubhaus.com.bd",
-    "category": "Clothing",
+    "shop_Link": "https://www.afternic.com",
+    "category": "Fashion",
     "isSaleOn": true
   },
   {
@@ -289,7 +289,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop-Link": "www.dorjibari.com.bd",
+    "shop_Link": "https://dorjibari.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -310,7 +310,7 @@
         "coupon_type": "flat"
       }
     ],
-    "shop-Link": "https://easyfashion.com.bd",
+    "shop_Link": "https://easyfashion.com.bd",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -330,7 +330,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop_Link": "http://www.nabila.com.bd/",
+    "shop_Link": "http://www.nabila.com.bd",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -350,7 +350,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop_Link": "www.lerevecraze.com",
+    "shop_Link": "https://www.lerevecraze.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -370,7 +370,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop_Link": "www.ecstasybd.com",
+    "shop_Link": "https://www.ecstasybd.com",
     "category": "Clothing",
     "isSaleOn": false
   },
@@ -390,7 +390,7 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop_Link": "www.smartex-bd.com",
+    "shop_Link": "https://www.smartex-bd.com",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -430,8 +430,8 @@
         "coupon_type": "percentage"
       }
     ],
-    "shop_Link": "www.coolbreeze.com",
-    "category": "Clothing",
+    "shop_Link": "https://www.coolbreeze.com",
+    "category": "SSL Company",
     "isSaleOn": true
   }
 ]

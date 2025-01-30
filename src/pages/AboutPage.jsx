@@ -1,111 +1,72 @@
-
-import React from "react";
-import { FaGithub, FaTwitter } from "react-icons/fa";
+import { useState } from "react";
+import { FaGithub, FaTwitter, FaSun, FaMoon, FaFacebook } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import profilePic from "../assets/profile.jpg"; // Add a profile picture
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const AboutPage = () => {
-  return (
-    <div className="container w-11/12 mx-auto p-6 bg-gray-50 rounded-lg shadow-lg">
-      <h2 className="text-4xl font-extrabold text-center text-indigo-600 mb-6">
-        About Me
-      </h2>
-      <div className="flex justify-center mb-6"></div>
-      <p className="text-lg mb-4 text-gray-700">
-        Hi, I'm Tasmina, a passionate software developer with a focus on
-        creating impactful web and mobile applications. I strive to combine
-        creativity with functionality to deliver exceptional user experiences.
-      </p>
-      <p className="text-lg mb-6 text-gray-700">
-        My journey began with a strong interest in technology, which led me to
-        explore various programming languages and development frameworks. I
-        specialize in front-end technologies like React, JavaScript, and CSS
-        frameworks such as Tailwind CSS, but I also have experience with
-        back-end development using Node.js, Express, and databases like MongoDB.
-      </p>
+  const [darkMode, setDarkMode] = useState(false);
 
-      <h3 className="text-2xl font-semibold text-indigo-600 mt-6 mb-3">
-        Skills
-      </h3>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            JavaScript (ES6+)
-          </h4>
-        </div>
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            React & React Native
-          </h4>
-        </div>
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            HTML5 & CSS3
-          </h4>
-        </div>
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            Tailwind CSS
-          </h4>
-        </div>
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            Node.js & Express
-          </h4>
-        </div>
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            MongoDB & SQL
-          </h4>
-        </div>
-        <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-all">
-          <h4 className="font-semibold text-lg text-indigo-500">
-            Git & GitHub
-          </h4>
+  return (
+    <div className={`${darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"} min-h-screen p-6 transition-all`}>
+      {/* Dark Mode Toggle */}
+      <div className="flex justify-end mb-4">
+        <button 
+          onClick={() => setDarkMode(!darkMode)}
+          className="p-2 rounded-full shadow-md bg-indigo-600 text-white"
+        >
+          {darkMode ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
+        </button>
+      </div>
+
+      {/* Hero Section */}
+      <div className="text-center">
+        <img src={profilePic} alt="Tasmina" className="w-32 h-32 object-cover mx-auto rounded-full shadow-md" />
+        <h1 className="text-4xl font-extrabold mt-4">Tasmina</h1>
+        <p className="text-lg text-indigo-700 font-semibold">Software Developer | Frontend Enthusiast</p>
+      </div>
+
+      {/* About Me */}
+      <div className="mt-8 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-indigo-600">About Me</h2>
+        <p className="mt-2 leading-relaxed">
+          I’m a passionate software developer who loves building impactful web and mobile applications.
+          I specialize in **React, Tailwind CSS, and Node.js**, and I'm always eager to learn new technologies.
+        </p>
+      </div>
+
+      {/* Skills Section */}
+      <div className="mt-8 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-indigo-600">Skills</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
+          {["JavaScript", "React", "Tailwind CSS", "Node.js", "MongoDB", "Git & GitHub"].map((skill, index) => (
+            <div key={index} className="bg-white p-3 shadow-md rounded-lg text-center text-indigo-600 font-semibold">
+              {skill}
+            </div>
+          ))}
         </div>
       </div>
 
-      <h3 className="text-2xl font-semibold text-indigo-600 mt-6 mb-3">
-        Other Projects
-      </h3>
-      <p className="text-lg mb-4 text-gray-700">
-        I am currently working on several projects, including:
-      </p>
-      <ul className="list-disc pl-6 text-lg text-gray-700">
-        <li>
-          <strong>Project 1:</strong> A web application that helps users track
-          their daily tasks and set reminders.
-        </li>
-        <li>
-          <strong>Project 2:</strong> An e-commerce platform with real-time
-          product recommendations and an integrated payment system.
-        </li>
-        <li>
-          <strong>Project 3:</strong> A mobile app for fitness tracking,
-          providing personalized workout plans and nutrition guides.
-        </li>
-      </ul>
+      {/* Projects Section */}
+      <div className="mt-8 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold text-indigo-600">Projects</h2>
+        <ul className="mt-4 space-y-3">
+          <li className="bg-white p-4 shadow-md rounded-lg">📌 Task Tracker Web App</li>
+          <li className="bg-white p-4 shadow-md rounded-lg">📌 E-commerce Platform</li>
+          <li className="bg-white p-4 shadow-md rounded-lg">📌 Fitness Tracker Mobile App</li>
+        </ul>
+      </div>
 
-      <p className="text-lg mt-4 text-gray-700">
-        I'm always eager to learn new technologies and take on challenges that
-        allow me to grow as a developer. If you are interested in collaborating
-        on a project or have any questions, feel free to reach out!
-      </p>
-
+      {/* Social Links */}
       <div className="flex justify-center space-x-6 mt-8">
-        <Link
-          to="https://github.com/wptasmina"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub className="text-3xl text-gray-800 hover:text-indigo-600 transition-all" />
+        <Link to="https://github.com/wptasmina" target="_blank" rel="noopener noreferrer">
+          <FaGithub className="text-3xl text-gray-700 hover:text-blue-600 transition-all" />
         </Link>
-
-        <Link
-          to="https://twitter.com/wptasmina"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter className="text-3xl text-gray-800 hover:text-indigo-600 transition-all" />
+        <Link to="https://twitter.com/wptasmina" target="_blank" rel="noopener noreferrer">
+          <FaSquareXTwitter className="text-3xl text-gray-700 hover:text-blue-600 transition-all" />
+        </Link>
+        <Link to="https://facebook.com/wptasmina" target="_blank" rel="noopener noreferrer">
+        <FaFacebook  className="text-3xl text-gray-700 hover:text-blue-600 transition-all" />
         </Link>
       </div>
     </div>
@@ -113,4 +74,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-

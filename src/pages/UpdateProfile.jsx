@@ -12,8 +12,8 @@ const UpdateProfile = () => {
 
   useEffect(() => {
     if (user) {
-      setName(user.displayName);
-      setPhotoURL(user.photoURL);
+      setName(user?.displayName);
+      setPhotoURL(user?.photoURL);
     }
   }, [user]);
 
@@ -44,7 +44,7 @@ const UpdateProfile = () => {
   return (
     <div className="flex justify-center items-center my-10 mx-5">
       <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 shrink-0 shadow-2xl">
-        <h2 className="text-2xl my-10 font-bold text-center mb-2 text-blue-600">
+        <h2 className="text-2xl my-10 font-bold text-center mb-2 text-blue-950">
           Update Now!
         </h2>
         <form onSubmit={handleSubmit} className="card-body">

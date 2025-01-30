@@ -20,7 +20,6 @@ const BrandRoute = () => {
         setBrands(data);
         setFilteredBrands(data);
       } catch (error) {
-        // console.error("Error fetching brands data: ", error);
       }
     };
 
@@ -56,7 +55,7 @@ const BrandRoute = () => {
 
   return (
     <div className="container w-11/12 mx-auto p-4">
-      <h1 className="text-4xl font-bold text-blue-400 mb-4">All Brands</h1>
+      <h1 className="text-4xl font-bold text-blue-950 mb-4">All Brands</h1>
       <input
         type="text"
         placeholder="Search by brand name..."

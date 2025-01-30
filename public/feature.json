@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Wireless Headphones",
     "price": 150,
-    "image": "https://i.postimg.cc/N0GWrfhQ/feature.jpg",
+    "image": "https://i.ibb.co.com/JswzVSv/Noise-Cancelling-Headphones.jpg",
     "isNewArrival": false,
     "discount": 20,
     "details": {
@@ -19,37 +19,37 @@
   },
   {
     "id": 2,
-    "name": "Smartphone",
-    "price": 999,
-    "image": "https://i.postimg.cc/W49xmLjg/smartphone.jpg",
+    "name": "Samsung-Galaxy-S23",
+    "price": 198,
+    "image": "https://i.ibb.co.com/P1S6B8w/Samsung-Galaxy-S23.jpg",
     "isNewArrival": true,
     "discount": 10,
     "details": {
       "description": "The latest smartphone with cutting-edge technology and sleek design.",
       "features": ["6.5-inch Display", "128GB Storage", "Triple Camera System"],
       "stock": 30,
-      "category": "Smartphones"
+      "category": "Samsung-Galaxy"
     }
   },
   {
     "id": 3,
     "name": "Laptop",
-    "price": 1200,
-    "image": "https://i.postimg.cc/brnMjZn9/laptop.jpg",
+    "price": 1600,
+    "image": "https://i.ibb.co.com/wYnzKxX/aming-Laptop-X1.jpg",
     "isNewArrival": true,
-    "discount": 15,
+    "discount": 25,
     "details": {
       "description": "Powerful and portable, this laptop is perfect for work and play.",
       "features": ["16GB RAM", "1TB SSD", "Intel i7 Processor"],
-      "stock": 20,
+      "stock": 10,
       "category": "Laptops"
     }
   },
   {
     "id": 4,
-    "name": "Smartwatch",
-    "price": 250,
-    "image": "https://i.postimg.cc/KzHwqKzN/smw.jpg",
+    "name": "Smart Watch",
+    "price": 25,
+    "image": "https://i.ibb.co.com/TvWpn35/which.webp",
     "isNewArrival": false,
     "discount": 10,
     "details": {
@@ -67,9 +67,9 @@
     "id": 5,
     "name": "Gaming Console",
     "price": 450,
-    "image": "https://i.postimg.cc/MZcpWVyz/cng.jpg",
+    "image": "https://i.ibb.co.com/1fvZh1RD/images-2025-01-29-T174740-226.jpg",
     "isNewArrival": true,
-    "discount": 25,
+    "discount": 15,
     "details": {
       "description": "The ultimate gaming experience with this next-gen console.",
       "features": ["4K Gaming", "1TB Storage", "DualShock Controller"],
@@ -80,22 +80,37 @@
   {
     "id": 6,
     "name": "Bluetooth Speaker",
-    "price": 80,
-    "image": "https://i.postimg.cc/CLkM80Pt/speaker.jpg",
+    "price": 87,
+    "image": "https://i.ibb.co.com/YRfRcB2/71w-GMk-ZU39-L.jpg",
     "isNewArrival": false,
     "discount": 15,
     "details": {
       "description": "Portable Bluetooth speaker with rich sound quality.",
       "features": ["Waterproof", "12-hour Battery Life", "Built-in Microphone"],
-      "stock": 75,
+      "stock": 65,
       "category": "Accessories"
     }
   },
+  
   {
     "id": 7,
+    "name": "i-Phone-13",
+    "price": 165,
+    "image": "https://i.ibb.co.com/X3SK7ZJ/i-Phone-13-Mini.webp",
+    "isNewArrival": false,
+    "discount": 10,
+    "details": {
+      "description": "The latest i-Phone with cutting-edge technology and sleek design.",
+      "features": ["6.5-inch Display", "128GB Storage", "Triple Camera System"],
+      "stock": 45,
+      "category": "i-Phone"
+    }
+  },
+  {
+    "id": 8,
     "name": "Wireless Mouse",
-    "price": 40,
-    "image": "https://i.postimg.cc/t4zXr5HN/wireles.jpg",
+    "price": 25,
+    "image": "https://i.ibb.co.com/JRJVF5br/download-24.jpg",
     "isNewArrival": false,
     "discount": 5,
     "details": {
@@ -105,21 +120,21 @@
         "Wireless Connectivity",
         "Adjustable DPI"
       ],
-      "stock": 200,
+      "stock": 250,
       "category": "Accessories"
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Tablet",
-    "price": 499,
-    "image": "https://i.postimg.cc/1zCyS3Xg/tablet.jpg",
+    "price": 199,
+    "image": "https://i.ibb.co.com/sJyyffPP/tab-m10-gen-3-10-500x500.webp",
     "isNewArrival": true,
     "discount": 10,
     "details": {
       "description": "Sleek and versatile tablet for work, play, and entertainment.",
       "features": ["10.5-inch Display", "64GB Storage", "Octa-core Processor"],
-      "stock": 40,
+      "stock": 60,
       "category": "Tablets"
     }
   }

@@ -32,12 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/routebrands",
         element: <BrandRoute />,
-        // loader: () => fetch("/brands.json"),
       },
       {
         path: "/brands",
         element: <BrandRoute />,
-        // loader: () => fetch("/brands.json"),
       },
       {
         path: "/about",
@@ -63,7 +61,6 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
-        // loader: () => fetch("/brands.json").then((res) => res.json()),
       },
       {
         path: "/forget-password",
@@ -73,60 +70,13 @@ const router = createBrowserRouter([
         path: "/brands/:id",
         element: <TopBrands></TopBrands>,
       },
-      // {
-      //   path: "/",
-      //   element: <TopBrands />,
-      //   loader: async () => {
-      //     try {
-      //       const res = await fetch("/brands.json");
-      //       const brands = await res.json();
-
-      //       return brands.filter((brand) => brand.isSaleOn);
-      //     } catch (error) {
-      //       console.error("Error loading brands:", error.message);
-      //       throw error;
-      //     }
-      //   },
-      // },
-      
       {
         path: "/brandDetails/:brandId",
         element: <BrandDetails />,
-        // loader: async ({ params }) => {
-        //   try {
-        //     const res = await fetch("/brands.json");
-        //     const brands = await res.json();
-        //     const brand = brands.find((b) => b._id.toString() === params.id);
-
-        //     if (!brand)
-        //       throw new Error(`Brand with ID ${params.id} not found.`);
-        //     return brand;
-        //   } catch (error) {
-        //     console.error("Error loading brand details:", error.message);
-        //     throw error;
-        //   }
-        // },
       },
-      // {
-      //   path: "/brands-on-sale",
-      //   element: <BrandsOnSale />,
-      //   loader: async () => {
-      //     try {
-      //       const res = await fetch("/brands.json");
-      //       const brandsData = await res.json();
-
-      //       return brandsData.filter((brand) => brand.isSaleOn);
-      //     } catch (error) {
-      //       console.error("Error loading brands:", error.message);
-      //       throw error;
-      //     }
-      //   },
-      // },
-
       {
         path: "/brands",
         element: <BrandsPage />,
-        // loader: () => fetch("/brands.json"),
       },
       {
         path: "/coupon-page",

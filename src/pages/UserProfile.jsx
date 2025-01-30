@@ -29,9 +29,9 @@ const UserProfile = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <div className="w-11/12 mx-auto h-64 bg-blue-500 flex items-center justify-center text-white">
+      <div className="w-11/12 mx-auto rounded-md h-64 bg-blue-950 flex items-center justify-center text-white">
         <h1 className="text-xl md:text-4xl font-bold">
-          Welcome, {updateName || user?.displayName || "User"}!
+         welcome, {updateName || user?.displayName || "User"}!
         </h1>
       </div>
 
@@ -45,13 +45,13 @@ const UserProfile = () => {
               "https://via.placeholder.com/150"
             }
             alt="User Avatar"
-            className="w-32 h-32 rounded-full shadow-md"
+            className="w-32 h-32 object-cover rounded-full shadow-md"
           />
           <div>
             <h2 className="text-2xl text-center my-2 font-bold">
               {user?.displayName}
             </h2>
-            <p className="text-gray-600">{user.email}</p>
+            <p className="text-gray-600">{user?.email}</p>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ const UserProfile = () => {
           <h3 className="text-lg font-semibold">Update Your Profile</h3>
           <button
             onClick={handleUpdateRoute}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 my-5"
+            className="px-4 py-2 bg-blue-950 text-white rounded hover:bg-blue-700 my-5"
           >
             Update Profile
           </button>

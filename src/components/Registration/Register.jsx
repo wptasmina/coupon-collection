@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../../context/AuthContext";
-
 
 const Register = () => {
   const { signUpWithEmail } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const validateThePassword = (password) => {
     const uppercasePattern = /[A-Z]/;
@@ -43,69 +43,72 @@ const Register = () => {
     signUpWithEmail(email, password, photoURL, name)
       .then((result) => {
         const user = result.user;
-        // console.log(user);
+        // After successful registration, navigate to the login page
+        navigate("/login");
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        // console.log(errorCode, errorMessage);
+        setError(errorMessage); // Set error message if sign-up fails
       });
   };
+
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
   return (
     <div className="flex justify-center items-center my-10 mx-5">
-      <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 shrink-0 shadow-2xl">
-        <h2 className="text-2xl my-10 font-bold text-center mb-2 text-blue-600">
+      <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 shrink-0 shadow-xl">
+        <h2 className="text-4xl my-10 font-bold text-center mb-2 text-blue-950">
           Register Now!
         </h2>
-        <form onSubmit={handleSubmit} className="card-body">
+        <form onSubmit={handleSubmit} className="card-body pt-10 pb-2">
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Name</span>
+              <span className="label-text text-lg text-blue-950 font-medium">Name</span>
             </label>
             <input
               type="text"
               placeholder="Name"
-              className="input input-bordered"
+              className="input input-bordered outline-none focus:outline-none"
               required
               name="name"
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Email</span>
+              <span className="label-text text-lg text-blue-950 font-medium">Email</span>
             </label>
             <input
               type="email"
               placeholder="email"
-              className="input input-bordered"
+              className="input input-bordered outline-none focus:outline-none"
               required
               name="email"
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">PhotoUrl</span>
+              <span className="label-text text-lg text-blue-950 font-medium">PhotoUrl</span>
             </label>
             <input
               type="text"
               placeholder="PhotoURL"
-              className="input input-bordered"
+              className="input input-bordered outline-none focus:outline-none"
               required
               name="photoURL"
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Password</span>
+              <span className="label-text text-lg text-blue-950 font-medium">Password</span>
             </label>
             <div className="relative">
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="password"
-                className="input w-full  input-bordered pr-10"
+                className="input w-full input-bordered pr-10 outline-none focus:outline-none"
                 required
                 name="password"
               />
@@ -113,12 +116,12 @@ const Register = () => {
                 className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer"
                 onClick={togglePasswordVisibility}
               >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                {showPassword ? <FaEyeSlash className="text-lg" /> : <FaEye className="text-lg" />}
               </span>
             </div>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Register</button>
+            <button className="btn text-lg bg-blue-950 font-medium text-white hover:bg-blue-900">Register</button>
           </div>
         </form>
         <div className="flex flex-col px-2 justify-center items-center">
@@ -127,9 +130,9 @@ const Register = () => {
               <p className="text-red-600 font-bold text-center">{error}</p>
             )}
           </div>
-          <p className="my-5 font-bold">
-            Already have an account?{" "}
-            <Link className="text-red-500" to="/login">
+          <p className="mb-8 mt-3 font-bold text-gray-600">
+            Already have an account?
+            <Link className="text-blue-950 link-hover" to="/login">
               Login
             </Link>
           </p>

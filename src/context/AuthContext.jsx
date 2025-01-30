@@ -13,7 +13,6 @@ import {
 import { toast } from "react-toastify";
 import app from "../fierbase/firebase.config";
 
-
 export const AuthContext = createContext();
 const auth = getAuth(app);
 
