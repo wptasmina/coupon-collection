@@ -4,25 +4,45 @@ import slider3 from "../../assets/slider/banner3.jpeg";
 import slider5 from "../../assets/slider/banner4.jpg";
 import gift from "../../assets/slider/gift.png";
 
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 export default function Banner() {
   return (
     <>
-      <div className="carousel w-full">
-        <div id="slide1" className="carousel-item relative w-full">
+    <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+
+        <SwiperSlide>
           <img
             src={slider1}
             className="w-full md:h-[500px] h-[200px] object-cover "
           />
-          <div className="absolute md:left-5 md:right-5 left-10 right-10 gap-2 md:top-[50%] top-[100%] flex md:-translate-y-1/2 transform md:justify-between justify-center py-4">
-            <a href="#slide4" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide2" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div id="slide2" className="relative w-full">
           <img
             src={slider2}
             className="w-full md:h-[500px] h-[200px]  object-cover"
@@ -39,17 +59,11 @@ export default function Banner() {
             </p>
             <p className="pt-1 text-blue-400 md:hidden">Up To 50% oFF</p>
           </div>
-
-          <div className="absolute md:left-5 md:right-5 left-10 right-10 gap-2 md:top-[50%] top-[100%] flex md:-translate-y-1/2 transform md:justify-between justify-center py-4">
-            <a href="#slide1" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide3" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full">
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div id="slide3" className=" relative w-full">
           <img
             src={slider3}
             className="w-full md:h-[500px] h-[200px] object-center "
@@ -57,16 +71,11 @@ export default function Banner() {
           <div className="absolute w-32 top-[10%] right-[6%]">
             <img src={gift} />
           </div>
-          <div className="absolute md:left-5 md:right-5 left-10 right-10 gap-2  md:top-[50%] top-[100%] flex md:-translate-y-1/2 transform md:justify-between justify-center py-4">
-            <a href="#slide2" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide4" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
-        <div id="slide4" className="carousel-item relative w-full">
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div id="slide4" className="relative w-full">
           <img
             src={slider5}
             className="w-full md:h-[500px] h-[200px] object-center "
@@ -82,17 +91,9 @@ export default function Banner() {
               WINTE COLLECTING EVERYTHING
             </h1>
           </div>
-
-          <div className="absolute md:left-5 md:right-5 left-10 right-10 gap-2 md:top-[50%] top-[100%] flex md:-translate-y-1/2 transform md:justify-between justify-center py-4 ">
-            <a href="#slide3" className="btn btn-circle">
-              ❮
-            </a>
-            <a href="#slide1" className="btn btn-circle">
-              ❯
-            </a>
-          </div>
         </div>
-      </div>
+        </SwiperSlide>
+    </Swiper>
     </>
   );
 }

@@ -54,8 +54,8 @@ const BrandRoute = () => {
   };
 
   return (
-    <div className="container w-11/12 mx-auto p-4">
-      <h1 className="text-4xl font-bold text-blue-950 mb-4">All Brands</h1>
+    <div className="w-11/12 mx-auto">
+      <h1 className="text-4xl font-bold text-blue-950 mt-10 mb-4">All Brands</h1>
       <input
         type="text"
         placeholder="Search by brand name..."

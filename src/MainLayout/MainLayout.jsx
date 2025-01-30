@@ -1,16 +1,18 @@
-import Header from "../pages/Header";
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
-import toast, { Toaster } from "react-hot-toast";
-const notify = () => toast("Here is your toast.");
+import Navbar from "../components/Navbar/Navbar";
+
+
 
 
 export default function MainLayout() {
   return (
     <>
       <div>
-        <Header />
-        <Outlet />
+      <Navbar />
+        <div className="min-h-[calc(100vh-348px)] ">
+          <Outlet />
+        </div>
         <Footer />
       </div>
     </>

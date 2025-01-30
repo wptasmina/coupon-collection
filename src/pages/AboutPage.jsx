@@ -23,15 +23,15 @@ const AboutPage = () => {
       <div className="text-center">
         <img src={profilePic} alt="Tasmina" className="w-32 h-32 object-cover mx-auto rounded-full shadow-md" />
         <h1 className="text-4xl font-extrabold mt-4">Tasmina</h1>
-        <p className="text-lg text-indigo-700 font-semibold">Software Developer | Frontend Enthusiast</p>
+        <p className="text-lg text-indigo-600 font-semibold">Software Developer | Frontend Enthusiast</p>
       </div>
 
       {/* About Me */}
       <div className="mt-8 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-indigo-600">About Me</h2>
-        <p className="mt-2 leading-relaxed">
+        <p className="mt-2 pl-4 leading-relaxed">
           I’m a passionate software developer who loves building impactful web and mobile applications.
-          I specialize in **React, Tailwind CSS, and Node.js**, and I'm always eager to learn new technologies.
+          I specialize in **React, Tailwind CSS, and Node.js, Express.js**, and I'm always eager to learn new technologies.
         </p>
       </div>
 
@@ -60,13 +60,13 @@ const AboutPage = () => {
       {/* Social Links */}
       <div className="flex justify-center space-x-6 mt-8">
         <Link to="https://github.com/wptasmina" target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-3xl text-gray-700 hover:text-blue-600 transition-all" />
+          <FaGithub className="text-3xl text-gray-500 hover:text-blue-600 transition-all" />
         </Link>
         <Link to="https://twitter.com/wptasmina" target="_blank" rel="noopener noreferrer">
-          <FaSquareXTwitter className="text-3xl text-gray-700 hover:text-blue-600 transition-all" />
+          <FaSquareXTwitter className="text-3xl text-gray-500 hover:text-blue-600 transition-all" />
         </Link>
         <Link to="https://facebook.com/wptasmina" target="_blank" rel="noopener noreferrer">
-        <FaFacebook  className="text-3xl text-gray-700 hover:text-blue-600 transition-all" />
+        <FaFacebook  className="text-3xl text-gray-500 hover:text-blue-600 transition-all" />
         </Link>
       </div>
     </div>

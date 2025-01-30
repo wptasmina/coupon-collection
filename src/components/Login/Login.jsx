@@ -2,6 +2,7 @@ import React, { useContext, useRef, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import { FaGoogle, FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
   const { signInWithGoogle, logInWithEmail } = useContext(AuthContext);
@@ -16,12 +17,14 @@ const Login = () => {
     const password = form.get("password");
 
     logInWithEmail(email, password)
-      .then(() => {
-        navigate("/"); // Navigate to home after successful login
+    .then(() => {
+      navigate("/"); // Navigate to home after successful login
+      toast.success('Login is successfully!')
       })
       .catch((error) => {
         console.error("Login failed:", error.message);
       });
+
   };
 
   const handleForgetRoute = () => {
@@ -37,6 +40,7 @@ const Login = () => {
     signInWithGoogle()
       .then(() => {
         navigate("/"); // Navigate to home after successful Google login
+        toast.success('Google Login is successfully!')
       })
       .catch((error) => {
         console.error("Google login failed:", error.message);
@@ -46,6 +50,7 @@ const Login = () => {
   return (
     <div className="flex justify-center items-center my-10 mx-5">
       <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 px-2 shrink-0 shadow-xl">
+
         <h2 className="text-4xl my-10 font-bold text-center mb-6 text-blue-950">Login Now!</h2>
         <form onSubmit={handleLogin} className="card-body">
           <div className="form-control">
@@ -92,6 +97,7 @@ const Login = () => {
           </div>
           <div className="form-control mt-6">
             <button className="btn bg-blue-950 text-white text-lg hover:bg-blue-900">Login</button>
+
           </div>
           <button
             type="button"
@@ -100,6 +106,7 @@ const Login = () => {
           >
             <FaGoogle className="text-blue-900 text-xl" /> Login With Google
           </button>
+          <ToastContainer />
         </form>
         <div className="flex justify-center items-center mb-4">
           <p className="my-5 font-bold text-gray-600">

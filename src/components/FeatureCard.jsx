@@ -21,7 +21,7 @@ const FeatureCard = ({ feature }) => {
   };
 
   return (
-    <div className="card bg-base-100 shadow-sm border border-gray-200 flex flex-col">
+    <div className="card bg-base-100 shadow-sm border border-gray-200 flex flex-col ">
       <figure className="sm:px-6 px-4 pt-6">
         <img
           src={image}

@@ -12,6 +12,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleLogOut = async () => {
     try {
@@ -27,24 +28,24 @@ const Navbar = () => {
 
   const links = (
     <>
-      <li>
+      <li className="mr-2">
         <NavLink to="/" className={({ isActive }) => (isActive ? "text-accent font-bold" : "")}>
           <IoHomeOutline /> Home
         </NavLink>
       </li>
-      <li>
+      <li className="mr-2">
         <NavLink to="/brands" className={({ isActive }) => (isActive ? "text-accent font-bold" : "")}>
           <TbBrandSafari /> Brands
         </NavLink>
       </li>
       {user && (
         <>
-          <li>
+          <li className="mr-2">
             <NavLink to="/userprofile" className={({ isActive }) => (isActive ? "text-accent font-bold" : "")}>
               <FaUser /> My Profile
             </NavLink>
           </li>
-          <li>
+          <li className="mr-2">
             <NavLink to="/coponpage" className={({ isActive }) => (isActive ? "text-accent font-bold" : "")}>
               <CiCreditCard1 /> Coupons
             </NavLink>
@@ -61,15 +62,36 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#b0d0fd] sticky top-0 backdrop-blur-lg z-50">
-      <div className="navbar md:w-11/12 mx-auto flex justify-between">
-        <div className="navbar-start w-full md:w-1/4">
-          <img className="w-14 h-14 rounded-full cursor-pointer" src={logo} alt="Logo" onClick={() => navigate("/")} />
+      <div className="navbar md:w-11/12 mx-auto flex justify-between items-center">
+        {/* Logo and Toggle Button */}
+        <div className="navbar-start flex items-center">
+          <img
+            className="w-14 h-14 rounded-full cursor-pointer"
+            src={logo}
+            alt="Logo"
+            onClick={() => navigate("/")}
+          />
+          <button
+            className="md:hidden ml-auto btn btn-ghost text-2xl"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            ☰
+          </button>
         </div>
 
-        <div className="navbar-center hidden lg:flex">
+        {/* Desktop Menu */}
+        <div className={`navbar-center hidden md:flex`}>
           <ul className="menu menu-horizontal text-xl font-bold">{links}</ul>
         </div>
 
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="absolute top-16 left-0 w-full bg-[#b0d0fd] shadow-lg md:hidden">
+            <ul className="menu menu-vertical text-lg p-4">{links}</ul>
+          </div>
+        )}
+
+        {/* User/Buttons */}
         <div className="navbar-end relative">
           {user ? (
             <div className="relative">
@@ -78,16 +100,13 @@ const Navbar = () => {
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 <img
-                  className="w-14 h-14 rounded-full border-2 border-blue-950 object-cover shadow-lg"
+                  className="w-12 h-12 rounded-full border-2 border-blue-950 object-cover shadow-lg"
                   src={photo || user?.photoURL || ""}
                   alt="User"
                 />
               </div>
-
               {dropdownOpen && (
-                <div
-                  className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg p-4 text-center z-50"
-                >
+                <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg p-4 text-center z-50">
                   <p className="text-gray-700 font-semibold mb-2">
                     {name || user?.displayName || "User"}
                   </p>
@@ -103,10 +122,16 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="flex gap-4">
-              <button onClick={() => navigate("/login")} className="btn bg-blue-950 text-white font-medium border border-blue-950">
+              <button
+                onClick={() => navigate("/login")}
+                className="btn bg-blue-950 text-white font-medium border border-blue-950"
+              >
                 Login
               </button>
-              <button onClick={() => navigate("/register")} className="btn bg-[#d85525] font-medium text-white border border-[#d85525]">
+              <button
+                onClick={() => navigate("/register")}
+                className="btn bg-[#d85525] font-medium text-white border border-[#d85525]"
+              >
                 Register
               </button>
             </div>

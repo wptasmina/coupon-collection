@@ -21,7 +21,7 @@ const Feature = () => {
 
   return (
     <>
-    <div className=" bg-slate-50 py-10">
+    <div className=" bg-slate-50 my-10 pb-10 ">
      <div className="sm:w-10/12 px-4 sm:px-0 mx-auto">
      <h2 class="text-4xl font-extrabold text-blue-950 mb-4 text-center pt-10">Features</h2>
       <p

@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../MainLayout/MainLayout";
 import HomePage from "./../pages/HomePage";
-import BrandsPage from "./../pages/BrandsPage";
-import MyProfile from "../pages/MyProfile";
+// import BrandsPage from "./../pages/BrandsPage";
+// import MyProfile from "../pages/MyProfile";
 import CouponPage from "../pages/CouponPage";
 import TopBrands from "../components/TopBrands/TopBrands";
 import BrandDetails from "../components/BrandDetails/BrandDetails";
@@ -75,17 +75,13 @@ const router = createBrowserRouter([
         element: <BrandDetails />,
       },
       {
-        path: "/brands",
-        element: <BrandsPage />,
-      },
-      {
         path: "/coupon-page",
         element: <CouponPage />,
       },
-      {
-        path: "/profile",
-        element: <MyProfile />,
-      },
+      // {
+      //   path: "/profile",
+      //   element: <MyProfile />,
+      // },
       {
         path: "/feature",
         element: <Feature></Feature>,
@@ -98,30 +94,6 @@ const router = createBrowserRouter([
         path: "/review",
         element: <Review />,
       },
-      // {
-      //   path: "/details/:id",
-      //   element: <Details></Details>,
-
-      //   loader: async ({ params }) => {
-      //     try {
-      //       const res = await fetch("/brands.json");
-
-      //       const data = await res.json();
-      //       const brandDetails = data.find(
-      //         (brand) => brand._id.toString() === params.id
-      //       );
-
-      //       if (!brandDetails) {
-      //         throw new Error(`No data found for ID: ${params.id}`);
-      //       }
-
-      //       return brandDetails;
-      //     } catch (error) {
-      //       console.error("Error loading data:", error.message);
-      //       throw error;
-      //     }
-      //   },
-      // },
     ],
   },
 ]);

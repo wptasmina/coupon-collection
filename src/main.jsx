@@ -10,7 +10,6 @@ import AuthProvider from './context/AuthContext';
 import ReviewProvider from './context/ReviewProvider';
 
 
-{/* <AuthProvider routes={<RouterProvider router={router} />}></AuthProvider> */}
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>

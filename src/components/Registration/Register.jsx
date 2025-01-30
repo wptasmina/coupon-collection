@@ -2,6 +2,9 @@ import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../../context/AuthContext";
+import { toast, ToastContainer } from "react-toastify";
+
+
 
 const Register = () => {
   const { signUpWithEmail } = useContext(AuthContext);
@@ -40,17 +43,21 @@ const Register = () => {
     } else {
       setError("");
     }
+    
     signUpWithEmail(email, password, photoURL, name)
       .then((result) => {
         const user = result.user;
         // After successful registration, navigate to the login page
         navigate("/login");
+        toast.success('SignUp is success!')
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         setError(errorMessage); // Set error message if sign-up fails
       });
+
+      
   };
 
   const togglePasswordVisibility = () => {
@@ -123,6 +130,7 @@ const Register = () => {
           <div className="form-control mt-6">
             <button className="btn text-lg bg-blue-950 font-medium text-white hover:bg-blue-900">Register</button>
           </div>
+          <ToastContainer />
         </form>
         <div className="flex flex-col px-2 justify-center items-center">
           <div>
