@@ -51,9 +51,9 @@ const AboutPage = () => {
       <div className="mt-8 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-indigo-600">Projects</h2>
         <ul className="mt-4 space-y-3">
-          <li className="bg-white p-4 shadow-md rounded-lg">📌 Task Tracker Web App</li>
-          <li className="bg-white p-4 shadow-md rounded-lg">📌 E-commerce Platform</li>
-          <li className="bg-white p-4 shadow-md rounded-lg">📌 Fitness Tracker Mobile App</li>
+          <li className="bg-white p-4 shadow-md rounded-lg text-indigo-700 font-medium">📌 Task Tracker Web App</li>
+          <li className="bg-white p-4 shadow-md rounded-lg text-indigo-700 font-medium ">📌 E-commerce Platform</li>
+          <li className="bg-white p-4 shadow-md rounded-lg text-indigo-700 font-medium ">📌 Fitness Tracker Mobile App</li>
         </ul>
       </div>
 

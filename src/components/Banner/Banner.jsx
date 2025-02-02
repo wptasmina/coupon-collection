@@ -11,10 +11,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination} from 'swiper/modules';
 
 export default function Banner() {
   return (
@@ -29,8 +29,8 @@ export default function Banner() {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        // navigation={true}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
 
@@ -51,13 +51,13 @@ export default function Banner() {
             <h4 className="md:text-lg text-md font-bold text-gray-600">
               Winter Specil
             </h4>
-            <h1 className="md:text-6xl text-3xl font-extrabold text-blue-950 md:pt-4 pt-1">
+            <h1 className="md:text-6xl text-3xl font-extrabold text-blue-950 pt-1">
               BIG SALE
             </h1>
-            <p className="md:text-xl font-bold text-gray-600 md:pt-4 pt-2 hidden md:block">
+            <p className="md:text-xl font-bold text-gray-600 pt-2 hidden md:block">
               Use this coupon code to receiv 50% discount off all product
             </p>
-            <p className="pt-1 text-blue-400 md:hidden">Up To 50% oFF</p>
+            <p className="pt-1 text-blue-500 font-medium md:hidden">Up To 50% oFF</p>
           </div>
         </div>
         </SwiperSlide>
@@ -75,12 +75,14 @@ export default function Banner() {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div id="slide4" className="relative w-full">
+        <div id="slide4" className="w-full">
+          <div className="relative w-full">
           <img
             src={slider5}
             className="w-full md:h-[500px] h-[200px] object-center "
           />
-          <div className="absolute md:top-[30%] md:left-[35%]  md:w-96 bg-white/30 p-10 md:px-2 md:py-6 ">
+          </div>
+          <div className="absolute md:top-[30%] sm:top-[10%] top-[2%]  w-full md:left-[35%] md:w-96 bg-white/30 p-10 md:px-2 md:py-6 ">
             <p className="md:text-lg text-md font-bold text-blue-900 text-center">
               Up To
             </p>
