@@ -27,7 +27,7 @@ const BrandsData = ({ brand }) => {
       <img
         src={brand_logo}
         alt={`${brand_name} Logo`}
-        className="w-full lg:h-[320px] sm:h-[250px] h-[250px] object-cover border-b md:px-6 md:pt-6 px-4 pt-4"
+        className="w-full lg:h-[300px] sm:h-[250px] h-[250px] object-cover border-b md:px-6 md:pt-6 px-4 pt-4"
       />
       <div className="card-body">
         <h2 className="card-title text-2xl font-bold">{brand_name}</h2>

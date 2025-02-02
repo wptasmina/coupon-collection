@@ -67,31 +67,27 @@ const router = createBrowserRouter([
         element: <ForgotPassword />,
       },
       {
-        path: "/brands/:id",
+        path: "rands/:id",
         element: <TopBrands></TopBrands>,
       },
       {
-        path: "/brandDetails/:brandId",
+        path: "brandDetails/${brandId}",
         element: <BrandDetails />,
       },
       {
-        path: "/coupon-page",
+        path: "coponpage",
         element: <CouponPage />,
       },
-      // {
-      //   path: "/profile",
-      //   element: <MyProfile />,
-      // },
       {
-        path: "/feature",
+        path: "feature",
         element: <Feature></Feature>,
       },
       {
-        path: "/featureDetails/:id",
+        path: "featureDetails/:id",
         element: <FeatureDetails></FeatureDetails>,
       },
       {
-        path: "/review",
+        path: "review",
         element: <Review />,
       },
     ],

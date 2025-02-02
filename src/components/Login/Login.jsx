@@ -3,6 +3,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { FaGoogle, FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; // Import styles
 
 const Login = () => {
   const { signInWithGoogle, logInWithEmail } = useContext(AuthContext);
@@ -10,21 +11,19 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     const form = new FormData(e.target);
     const email = form.get("email");
     const password = form.get("password");
 
-    logInWithEmail(email, password)
-    .then(() => {
-      navigate("/"); // Navigate to home after successful login
-      toast.success('Login is successfully!')
-      })
-      .catch((error) => {
-        console.error("Login failed:", error.message);
-      });
-
+    try {
+      await logInWithEmail(email, password);
+      toast.success("Login successful! Redirecting...");
+      setTimeout(() => navigate("/"), 2000); // Delay navigation
+    } catch (error) {
+      toast.error(error.message.replace("Firebase:", "").trim());
+    }
   };
 
   const handleForgetRoute = () => {
@@ -32,26 +31,25 @@ const Login = () => {
     navigate("/forgetPassword", { state: { email } });
   };
 
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
-
-  const handleGooglePopUp = () => {
-    signInWithGoogle()
-      .then(() => {
-        navigate("/"); // Navigate to home after successful Google login
-        toast.success('Google Login is successfully!')
-      })
-      .catch((error) => {
-        console.error("Google login failed:", error.message);
-      });
+  const handleGooglePopUp = async () => {
+    try {
+      await signInWithGoogle();
+      toast.success("Google Login successful! Redirecting...");
+      setTimeout(() => navigate("/"), 2000); // Delay navigation
+    } catch (error) {
+      toast.error(error.message.replace("Firebase:", "").trim());
+    }
   };
 
   return (
     <div className="flex justify-center items-center my-10 mx-5">
-      <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 px-2 shrink-0 shadow-xl">
+      {/* Toast Container placed at the top level */}
+      <ToastContainer position="top-center" autoClose={2000} />
 
-        <h2 className="text-4xl my-10 font-bold text-center mb-6 text-blue-950">Login Now!</h2>
+      <div className="card bg-base-100 w-full md:w-3/4 lg:w-3/6 px-2 shrink-0 shadow-xl">
+        <h2 className="text-4xl my-10 font-bold text-center mb-6 text-blue-950">
+          Login Now!
+        </h2>
         <form onSubmit={handleLogin} className="card-body">
           <div className="form-control">
             <label className="label text-blue-950 font-semibold">
@@ -81,9 +79,13 @@ const Login = () => {
               />
               <span
                 className="absolute right-5 top-1/2 transform -translate-y-1/2 cursor-pointer"
-                onClick={togglePasswordVisibility}
+                onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? <FaEyeSlash className="text-lg" /> : <FaEye className="text-lg" />}
+                {showPassword ? (
+                  <FaEyeSlash className="text-lg" />
+                ) : (
+                  <FaEye className="text-lg" />
+                )}
               </span>
             </div>
             <label className="label">
@@ -96,8 +98,9 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn bg-blue-950 text-white text-lg hover:bg-blue-900">Login</button>
-
+            <button className="btn bg-blue-950 text-white text-lg hover:bg-blue-900">
+              Login
+            </button>
           </div>
           <button
             type="button"
@@ -110,7 +113,10 @@ const Login = () => {
         </form>
         <div className="flex justify-center items-center mb-4">
           <p className="my-5 font-bold text-gray-600">
-            Don't have an account? <Link className="text-blue-950 link-hover" to="/register">Register</Link>
+            Don't have an account?{" "}
+            <Link className="text-blue-950 link-hover" to="/register">
+              Register
+            </Link>
           </p>
         </div>
       </div>

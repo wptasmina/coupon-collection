@@ -1,8 +1,10 @@
-import { useLoaderData } from "react-router-dom";
+
 import Marquee from "react-fast-marquee";
+import { productContext } from "../../context/ProductProvider";
+import { useContext } from "react";
 
 const TopBrands = () => {
-  const brands = useLoaderData();
+  const { brands } = useContext(productContext);
 
   return (
     <>
@@ -16,7 +18,7 @@ const TopBrands = () => {
               <div
                 key={brand._id}
                 className="flex flex-col items-center mx-4 cursor-pointer"
-                onClick={() => (window.location.href = `/brand/${brand._id}`)}
+                // onClick={() => (window.location.href = `/brand/${brand._id}`)}
               >
                 <img
                   src={brand.brand_logo}

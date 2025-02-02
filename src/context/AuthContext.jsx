@@ -66,7 +66,7 @@ const AuthProvider = ({ children }) => {
       });
 
       setUser({ ...newUser, displayName, photoURL });
-      toast.success("User signed up successfully!");
+      // toast.success("User signed up successfully!");
     } catch (error) {
       toast.error("Failed to sign up!");
     } finally {
