@@ -54,7 +54,7 @@ const BrandRoute = () => {
   };
 
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto mb-4">
       <h1 className="text-4xl font-bold text-blue-950 mt-10 mb-4">All Brands</h1>
       <input
         type="text"
