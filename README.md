@@ -1,51 +1,84 @@
 # React + Vite
-Live Link : https://coupon-collecting.netlify.app 
 
-React E-Commerce Application
-A modern React-based application for showcasing brands, sales, and coupons with user authentication features.
+# React E-Commerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Link:** [Coupon Collecting App](https://coupon-collecting.netlify.app)
 
-Key Features
-User Authentication
+A modern React-based e-commerce application for showcasing brands, sales, and coupons with user authentication features. Built for performance, interactivity, and responsive design.
 
-Registration with name, email, photo, and password.
-Login via email/password or Google authentication.
-Route protection for logged-in users.
-Dynamic Routing
+This template provides a minimal setup to get React working in Vite with HMR and ESLint rules.
 
-Explore brands and sales with React Router.
-Brand details page with coupon information and offers.
-Responsive Design
+## Key Features
 
-Fully responsive UI built with Tailwind CSS.
-Works seamlessly on desktops, tablets, and mobile devices.
-Interactive Components
+### 1. **User Authentication**
+   - Registration with name, email, photo, and password.
+   - Login via email/password or Google authentication.
+   - Route protection for logged-in users.
 
-Image slider on the homepage for a visually appealing banner.
-Fast marquee for showcasing brand logos with hover-to-pause feature.
-Brand and Coupon Information
+### 2. **Dynamic Routing**
+   - Explore brands and sales using React Router.
+   - Brand details page with coupon information and offers.
 
-View brand details, category, logo, and available coupons.
-Dynamic filtering to show brands on sale.
+### 3. **Responsive Design**
+   - Fully responsive UI built with Tailwind CSS.
+   - Works seamlessly on desktops, tablets, and mobile devices.
 
-Technologies Used:
-React: Frontend framework for building interactive user interfaces.
-React Router: For routing and navigation.
-Tailwind CSS: For styling and responsive design.
-Firebase Authentication: For secure user authentication.
-React Fast Marquee: For smooth scrolling brand logo animation.
-React Toastify: For error and success notifications.
+### 4. **Interactive Components**
+   - Image slider on the homepage for a visually appealing banner.
+   - Fast marquee for showcasing brand logos with hover-to-pause feature.
 
-Contributing
-Feel free to fork this repository and submit pull requests for improvements or bug fixes.
-For major changes, please open an issue first to discuss your ideas.
+### 5. **Brand and Coupon Information**
+   - View brand details, category, logo, and available coupons.
+   - Dynamic filtering to show brands on sale.
 
-Acknowledgments
-Inspired by modern e-commerce applications.
-Thanks to React and Tailwind CSS for amazing tools.
+### 6. **Enhanced User Experience** (New Features)
+   - **Wishlist Functionality:** Users can add coupons or brands to a wishlist for future use.
+   - **Search Functionality:** A real-time search bar to quickly find brands, coupons, or categories.
+   - **Sort and Filter Options:** Easily sort coupons by discount percentage or filter brands by category.
+   - **Dark Mode:** A toggle to switch between light and dark themes for better accessibility.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React:** Frontend framework for building interactive user interfaces.
+- **React Router:** For routing and navigation.
+- **Tailwind CSS:** For styling and responsive design.
+- **Firebase Authentication:** For secure user authentication.
+- **React Fast Marquee:** For smooth scrolling brand logo animation.
+- **React Toastify:** For error and success notifications.
+- **Vite:** For fast development and HMR (Hot Module Replacement).
+
+## Installation
+
+To run the project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/react-ecommerce-app.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd react-ecommerce-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open the application in your browser at `http://localhost:5173`.
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests for improvements or bug fixes. For major changes, please open an issue first to discuss your ideas.
+
+## Acknowledgments
+
+- Inspired by modern e-commerce applications.
+- Thanks to React and Tailwind CSS for amazing tools.
+
+## Official Vite Plugins
+
+- **@vitejs/plugin-react:** Uses Babel for Fast Refresh.
+- **@vitejs/plugin-react-swc:** Uses SWC for Fast Refresh.
